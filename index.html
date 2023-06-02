@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="icon" type="image/x-icon" href="/images/youtube-24-289233.png" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/images/logo.png" alt="Youtubelogo" />
+        </div>
+        <div class="center">
+          <input type="text" id="search" placeholder="Search video" />
+          <button
+            onclick="searchVideos()"
+            class="fa-solid fa-magnifying-glass"
+            id="button"
+          ></button>
+        </div>
+        <div class="icon">
+          <img src="/images/video-plus.png" alt="create-icon" />
+          <img src="/images/bell.png" alt="notification-icon" />
+        </div>
+      </nav>
+    </header>
+
+    <section id="container"></section>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b80725e084.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
