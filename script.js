@@ -1,5 +1,5 @@
 const searchInput = document.getElementById("search");
-const apiKey = "AIzaSyAVvIhLP89lod5lzMzZXV3MSVkAb8j4LoY";
+const apiKey = "AIzaSyBeLHDDhdPkQzk9rGH4OZiNXTMcBaNQsKo";
 const container = document.getElementById("container");
 /**https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=nrendramodi&key=AIzaSyAVvIhLP89lod5lzMzZXV3MSVkAb8j4LoY */
 /**'https://youtube.googleapis.com/youtube/v3/search?part=snippet&forMine=true&maxResults=25&q=fun&type=video&key=[YOUR_API_KEY] */
@@ -10,7 +10,7 @@ function searchVideos() {
 }
 
 async function fetchVideos(searchValue) {
-  let endpoint = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&forMine=true&maxResults=25&q=fun&type=video&key=${apiKey}`;
+  let endpoint = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&forMine=true&maxResults=25&q=${searchValue}&type=video&key=${apiKey}`;
   try {
     let response = await fetch(endpoint); // response is instance of response class
     let result = await response.json();
